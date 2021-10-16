@@ -9,8 +9,8 @@ body {
 }
 
 .page-container {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-image: url("images/bg-intro-mobile.png");
     background-size: cover;
     background-color: hsl(0, 100%, 74%);
@@ -30,6 +30,7 @@ body {
 .title-section {
     width: 60%;
     margin-top: 3em;
+    text-align: center;
 }
 
 .description {
@@ -45,10 +46,65 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-weight: 400;
     background-color: hsl(248, 32%, 49%);
+    padding: 40px;
     border-radius: 10px;
+    box-shadow: 0 10px 1px -2px rgba(62, 60, 73, 0.2);
+}
+
+.bold {
+    font-weight: 700;
 }
 
 .sign-up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
 
+input {
+    margin-bottom: 15px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+    padding: 15px;
+}
+
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(246, 25%, 77%);
+    font-weight: 700;
+}
+.submit {
+    width: 100%;
+    height: 50px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px;
+}
+.disclaimer {
+    color: hsl(246, 25%, 77%);
+    font-weight: 600;
+    font-size: 12px;
+    width: 70%;
+    text-align: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.tos {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
 }
