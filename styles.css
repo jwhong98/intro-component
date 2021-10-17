@@ -29,7 +29,7 @@ body {
 
 .title-section {
     width: 70%;
-    margin-top: 3em;
+    margin-top: 3rem;
     text-align: center;
 }
 
@@ -58,7 +58,7 @@ body {
     font-weight: 700;
 }
 
-.sign-up {
+#form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -91,11 +91,16 @@ input::placeholder {
     text-transform: uppercase;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+form .error {
+    color: black;
 }
 .disclaimer {
     color: hsl(246, 25%, 77%);
     font-weight: 600;
-    font-size: 12px;
+    font-size: .75rem;
     width: 70%;
     text-align: center;
     margin: 0;
@@ -107,4 +112,39 @@ input::placeholder {
 .tos {
     color: hsl(0, 100%, 74%);
     font-weight: 700;
+}
+
+@media screen and (min-width:600px) {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .page-container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        background-size: contain;
+        padding: none;
+    }
+
+    .text-wrapper {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-section {
+        padding: 0;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .description {
+        width: 70%;
+        text-align: left;
+    }
 }

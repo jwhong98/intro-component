@@ -1,0 +1,22 @@
+{
+  "name": "intro-component-with-signup-form-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwhong98/intro-component.git"
+  },
+  "author": "Jaewon Hong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwhong98/intro-component/issues"
+  },
+  "homepage": "https://github.com/jwhong98/intro-component#readme",
+  "dependencies": {
+    "jquery-validation": "^1.19.3"
+  }
+}
